@@ -118,7 +118,7 @@ body {
  */
 
 .cover {
-    padding: 0 45px;
+    padding: 0 25px;
 }
 .cover .btn-lg {
     padding: 10px 20px;
@@ -138,6 +138,10 @@ body {
     height: 50px;
     clear:both;
     padding-top:20px;
+}
+
+.lead {
+    font-size: 20px;
 }
 
 

@@ -14,16 +14,12 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Optional theme -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/bootstrap-material-design/material.min.css" rel="stylesheet">
-    <link href="css/bootstrap-material-design/ripples.min.css" rel="stylesheet">
-    <link href="css/bootstrap-material-design/material-wfont.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/angular_material/0.7.1/angular-material.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/body.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/book.css">
 
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
@@ -32,17 +28,352 @@
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
-</div>
+<header>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target=".navbar-responsive-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">K Life</a>
+            </div>
+            <div class="navbar-collapse collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="javascript:void(0)">一起閱讀</a></li>
+                    <li><a href="javascript:void(0)">一起聆聽</a></li>
+                    <li><a href="javascript:void(0)">一起觀看</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<main ng-controller="AppCtrl">
+    <a href="http://news.kollect.com.tw/event/201501/sale/?url=event/201501/sale"><img
+            src="http://kollect.com.tw/files/kobanner/1711422585762.jpg" style="display: inline; width: 100%"></a>
+
+    <div class="container">
+        <md-tabs class="md-primary" md-selected="data.selectedIndex">
+            <md-tab id="tab1" aria-controls="tab1-content">
+                文章
+            </md-tab>
+            <md-tab id="tab2" aria-controls="tab2-content">
+                書籍
+            </md-tab>
+        </md-tabs>
+        <ng-switch on="data.selectedIndex" class="tabpanel-container">
+            <div role="tabpanel"
+                 id="tab1-content"
+                 aria-labelledby="tab1"
+                 ng-switch-when="0"
+                 md-swipe-left="next()"
+                 md-swipe-right="previous()">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <md-card>
+                            <img src="http://bookfeed.kollect.com.tw/files/bookcnt/rss_img/other/9/157051/1423798236tSUtDn.png"
+                                 alt="Washed Out">
+                            <md-card-content>
+                                <h2>Facebook讓用戶選定「帳號繼承者」，管理逝世後帳號資訊</h2>
+
+                                <p class="md-card-text">
+
+                                    死亡是個忌諱、敏感的話題，但是當離開人世後，那些社群媒體帳號又該怎麼辦呢？Facebook宣布新政策，允許用戶在安全設定中選定「帳號繼承者」，在自己過世後，獲得帳號管理權限。如同實體財產般，每個人也在網路世界中擁有資訊財產，像是照片、電子郵件等資料。Google有「Inactive Account Manager」管理工具，讓Google用戶設定在帳號停止活動一段時間後，要刪除所有資料，或是選定某 </p>
+                                <md-button class="md-raised pull-right md-primary"
+                                           ng-href="http://doctorkowj.gitbooks.io/kppolicy/content/">開始閱讀
+                                </md-button>
+                            </md-card-content>
+                        </md-card>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <md-card>
+                            <img src="http://bookfeed.kollect.com.tw/files/bookcnt/rss_img/other/9/157051/1423798236tSUtDn.png"
+                                 alt="Washed Out">
+                            <md-card-content>
+                                <h2>Facebook讓用戶選定「帳號繼承者」，管理逝世後帳號資訊</h2>
+
+                                <p class="md-card-text">
+
+                                    死亡是個忌諱、敏感的話題，但是當離開人世後，那些社群媒體帳號又該怎麼辦呢？Facebook宣布新政策，允許用戶在安全設定中選定「帳號繼承者」，在自己過世後，獲得帳號管理權限。如同實體財產般，每個人也在網路世界中擁有資訊財產，像是照片、電子郵件等資料。Google有「Inactive Account Manager」管理工具，讓Google用戶設定在帳號停止活動一段時間後，要刪除所有資料，或是選定某 </p>
+                                <md-button class="md-raised pull-right md-primary"
+                                           ng-href="http://doctorkowj.gitbooks.io/kppolicy/content/">開始閱讀
+                                </md-button>
+                            </md-card-content>
+                        </md-card>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <md-card>
+                            <img src="http://bookfeed.kollect.com.tw/files/bookcnt/rss_img/other/9/157051/1423798236tSUtDn.png"
+                                 alt="Washed Out">
+                            <md-card-content>
+                                <h2>Facebook讓用戶選定「帳號繼承者」，管理逝世後帳號資訊</h2>
+
+                                <p class="md-card-text">
+
+                                    死亡是個忌諱、敏感的話題，但是當離開人世後，那些社群媒體帳號又該怎麼辦呢？Facebook宣布新政策，允許用戶在安全設定中選定「帳號繼承者」，在自己過世後，獲得帳號管理權限。如同實體財產般，每個人也在網路世界中擁有資訊財產，像是照片、電子郵件等資料。Google有「Inactive Account Manager」管理工具，讓Google用戶設定在帳號停止活動一段時間後，要刪除所有資料，或是選定某 </p>
+                                <md-button class="md-raised pull-right md-primary"
+                                           ng-href="http://doctorkowj.gitbooks.io/kppolicy/content/">開始閱讀
+                                </md-button>
+                            </md-card-content>
+                        </md-card>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <md-card>
+                            <img src="http://bookfeed.kollect.com.tw/files/bookcnt/rss_img/other/9/157051/1423798236tSUtDn.png"
+                                 alt="Washed Out">
+                            <md-card-content>
+                                <h2>Facebook讓用戶選定「帳號繼承者」，管理逝世後帳號資訊</h2>
+
+                                <p class="md-card-text">
+
+                                    死亡是個忌諱、敏感的話題，但是當離開人世後，那些社群媒體帳號又該怎麼辦呢？Facebook宣布新政策，允許用戶在安全設定中選定「帳號繼承者」，在自己過世後，獲得帳號管理權限。如同實體財產般，每個人也在網路世界中擁有資訊財產，像是照片、電子郵件等資料。Google有「Inactive Account Manager」管理工具，讓Google用戶設定在帳號停止活動一段時間後，要刪除所有資料，或是選定某 </p>
+                                <md-button class="md-raised pull-right md-primary"
+                                           ng-href="http://doctorkowj.gitbooks.io/kppolicy/content/">開始閱讀
+                                </md-button>
+                            </md-card-content>
+                        </md-card>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <md-card>
+                            <img src="http://bookfeed.kollect.com.tw/files/bookcnt/rss_img/other/9/157051/1423798236tSUtDn.png"
+                                 alt="Washed Out">
+                            <md-card-content>
+                                <h2>Facebook讓用戶選定「帳號繼承者」，管理逝世後帳號資訊</h2>
+
+                                <p class="md-card-text">
+
+                                    死亡是個忌諱、敏感的話題，但是當離開人世後，那些社群媒體帳號又該怎麼辦呢？Facebook宣布新政策，允許用戶在安全設定中選定「帳號繼承者」，在自己過世後，獲得帳號管理權限。如同實體財產般，每個人也在網路世界中擁有資訊財產，像是照片、電子郵件等資料。Google有「Inactive Account Manager」管理工具，讓Google用戶設定在帳號停止活動一段時間後，要刪除所有資料，或是選定某 </p>
+                                <md-button class="md-raised pull-right md-primary"
+                                           ng-href="http://doctorkowj.gitbooks.io/kppolicy/content/">開始閱讀
+                                </md-button>
+                            </md-card-content>
+                        </md-card>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <md-card>
+                            <img src="http://bookfeed.kollect.com.tw/files/bookcnt/rss_img/other/9/157051/1423798236tSUtDn.png"
+                                 alt="Washed Out">
+                            <md-card-content>
+                                <h2>Facebook讓用戶選定「帳號繼承者」，管理逝世後帳號資訊</h2>
+
+                                <p class="md-card-text">
+
+                                    死亡是個忌諱、敏感的話題，但是當離開人世後，那些社群媒體帳號又該怎麼辦呢？Facebook宣布新政策，允許用戶在安全設定中選定「帳號繼承者」，在自己過世後，獲得帳號管理權限。如同實體財產般，每個人也在網路世界中擁有資訊財產，像是照片、電子郵件等資料。Google有「Inactive Account Manager」管理工具，讓Google用戶設定在帳號停止活動一段時間後，要刪除所有資料，或是選定某 </p>
+                                <md-button class="md-raised pull-right md-primary"
+                                           ng-href="http://doctorkowj.gitbooks.io/kppolicy/content/">開始閱讀
+                                </md-button>
+                            </md-card-content>
+                        </md-card>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <md-card>
+                            <img src="http://bookfeed.kollect.com.tw/files/bookcnt/rss_img/other/9/157051/1423798236tSUtDn.png"
+                                 alt="Washed Out">
+                            <md-card-content>
+                                <h2>Facebook讓用戶選定「帳號繼承者」，管理逝世後帳號資訊</h2>
+
+                                <p class="md-card-text">
+
+                                    死亡是個忌諱、敏感的話題，但是當離開人世後，那些社群媒體帳號又該怎麼辦呢？Facebook宣布新政策，允許用戶在安全設定中選定「帳號繼承者」，在自己過世後，獲得帳號管理權限。如同實體財產般，每個人也在網路世界中擁有資訊財產，像是照片、電子郵件等資料。Google有「Inactive Account Manager」管理工具，讓Google用戶設定在帳號停止活動一段時間後，要刪除所有資料，或是選定某 </p>
+                                <md-button class="md-raised pull-right md-primary"
+                                           ng-href="http://doctorkowj.gitbooks.io/kppolicy/content/">開始閱讀
+                                </md-button>
+                            </md-card-content>
+                        </md-card>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel"
+                 id="tab2-content"
+                 aria-labelledby="tab2"
+                 ng-switch-when="1"
+                 md-swipe-left="next()"
+                 md-swipe-right="previous()">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <md-card>
+                            <img src="http://kollect.com.tw/files/bookcnt/669/0100235820/img/1423735631_large.jpg"
+                                 alt="Washed Out">
+                            <md-card-content>
+                                <h2>理財周刊755+756：穩賺20％！羊年投資術 股俠你來做</h2>
+
+                                <p class="md-card-text">
+                                    黑天鵝亂飛，國際股市動盪，台股過年連假不開盤，風險不小。理周投研部上周已建議讀者落袋為安，新春開紅盤，謀定而後動，再看國內外情勢擬定新的操作策略。但有許多個股出現法人逢低認養及主力默默吃貨鎖碼的現象，理周投研部在新春關鍵時刻，特別推出金羊年「股俠養成術」，教投資人向股神取經、跟主力飆速、吃法人豆腐，穩賺20%！
+
+                                    更多精采內容》 ◆新春開紅盤 傳產可望異軍突起 ◆神祕買盤進駐13檔潛力股 ◆原物料蠢動 春江水暖「鎳」先知？ ◆向股神巴菲特取經 布局每年賺逾4元好股
+                                    ◆搞懂法拍７件事
+                                    用市價6.4折買法拍屋 ◆金羊年要人旺、財氣旺 張旭初傳授兩大聚寶盆好招羊財 ◆海外基金投資 小心匯差魔鬼。 </p>
+                                <md-button class="md-raised pull-right md-primary"
+                                           ng-href="http://doctorkowj.gitbooks.io/kppolicy/content/">開始閱讀
+                                </md-button>
+                            </md-card-content>
+                        </md-card>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <md-card>
+                            <img src="http://kollect.com.tw/files/bookcnt/669/0100235820/img/1423735631_large.jpg"
+                                 alt="Washed Out">
+                            <md-card-content>
+                                <h2>理財周刊755+756：穩賺20％！羊年投資術 股俠你來做</h2>
+
+                                <p class="md-card-text">
+                                    黑天鵝亂飛，國際股市動盪，台股過年連假不開盤，風險不小。理周投研部上周已建議讀者落袋為安，新春開紅盤，謀定而後動，再看國內外情勢擬定新的操作策略。但有許多個股出現法人逢低認養及主力默默吃貨鎖碼的現象，理周投研部在新春關鍵時刻，特別推出金羊年「股俠養成術」，教投資人向股神取經、跟主力飆速、吃法人豆腐，穩賺20%！
+
+                                    更多精采內容》 ◆新春開紅盤 傳產可望異軍突起 ◆神祕買盤進駐13檔潛力股 ◆原物料蠢動 春江水暖「鎳」先知？ ◆向股神巴菲特取經 布局每年賺逾4元好股
+                                    ◆搞懂法拍７件事
+                                    用市價6.4折買法拍屋 ◆金羊年要人旺、財氣旺 張旭初傳授兩大聚寶盆好招羊財 ◆海外基金投資 小心匯差魔鬼。 </p>
+                                <md-button class="md-raised pull-right md-primary"
+                                           ng-href="http://doctorkowj.gitbooks.io/kppolicy/content/">開始閱讀
+                                </md-button>
+                            </md-card-content>
+                        </md-card>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <md-card>
+                            <img src="http://kollect.com.tw/files/bookcnt/669/0100235820/img/1423735631_large.jpg"
+                                 alt="Washed Out">
+                            <md-card-content>
+                                <h2>理財周刊755+756：穩賺20％！羊年投資術 股俠你來做</h2>
+
+                                <p class="md-card-text">
+                                    黑天鵝亂飛，國際股市動盪，台股過年連假不開盤，風險不小。理周投研部上周已建議讀者落袋為安，新春開紅盤，謀定而後動，再看國內外情勢擬定新的操作策略。但有許多個股出現法人逢低認養及主力默默吃貨鎖碼的現象，理周投研部在新春關鍵時刻，特別推出金羊年「股俠養成術」，教投資人向股神取經、跟主力飆速、吃法人豆腐，穩賺20%！
+
+                                    更多精采內容》 ◆新春開紅盤 傳產可望異軍突起 ◆神祕買盤進駐13檔潛力股 ◆原物料蠢動 春江水暖「鎳」先知？ ◆向股神巴菲特取經 布局每年賺逾4元好股
+                                    ◆搞懂法拍７件事
+                                    用市價6.4折買法拍屋 ◆金羊年要人旺、財氣旺 張旭初傳授兩大聚寶盆好招羊財 ◆海外基金投資 小心匯差魔鬼。 </p>
+                                <md-button class="md-raised pull-right md-primary"
+                                           ng-href="http://doctorkowj.gitbooks.io/kppolicy/content/">開始閱讀
+                                </md-button>
+                            </md-card-content>
+                        </md-card>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <md-card>
+                            <img src="http://kollect.com.tw/files/bookcnt/669/0100235820/img/1423735631_large.jpg"
+                                 alt="Washed Out">
+                            <md-card-content>
+                                <h2>理財周刊755+756：穩賺20％！羊年投資術 股俠你來做</h2>
+
+                                <p class="md-card-text">
+                                    黑天鵝亂飛，國際股市動盪，台股過年連假不開盤，風險不小。理周投研部上周已建議讀者落袋為安，新春開紅盤，謀定而後動，再看國內外情勢擬定新的操作策略。但有許多個股出現法人逢低認養及主力默默吃貨鎖碼的現象，理周投研部在新春關鍵時刻，特別推出金羊年「股俠養成術」，教投資人向股神取經、跟主力飆速、吃法人豆腐，穩賺20%！
+
+                                    更多精采內容》 ◆新春開紅盤 傳產可望異軍突起 ◆神祕買盤進駐13檔潛力股 ◆原物料蠢動 春江水暖「鎳」先知？ ◆向股神巴菲特取經 布局每年賺逾4元好股
+                                    ◆搞懂法拍７件事
+                                    用市價6.4折買法拍屋 ◆金羊年要人旺、財氣旺 張旭初傳授兩大聚寶盆好招羊財 ◆海外基金投資 小心匯差魔鬼。 </p>
+                                <md-button class="md-raised pull-right md-primary"
+                                           ng-href="http://doctorkowj.gitbooks.io/kppolicy/content/">開始閱讀
+                                </md-button>
+                            </md-card-content>
+                        </md-card>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <md-card>
+                            <img src="http://kollect.com.tw/files/bookcnt/669/0100235820/img/1423735631_large.jpg"
+                                 alt="Washed Out">
+                            <md-card-content>
+                                <h2>理財周刊755+756：穩賺20％！羊年投資術 股俠你來做</h2>
+
+                                <p class="md-card-text">
+                                    黑天鵝亂飛，國際股市動盪，台股過年連假不開盤，風險不小。理周投研部上周已建議讀者落袋為安，新春開紅盤，謀定而後動，再看國內外情勢擬定新的操作策略。但有許多個股出現法人逢低認養及主力默默吃貨鎖碼的現象，理周投研部在新春關鍵時刻，特別推出金羊年「股俠養成術」，教投資人向股神取經、跟主力飆速、吃法人豆腐，穩賺20%！
+
+                                    更多精采內容》 ◆新春開紅盤 傳產可望異軍突起 ◆神祕買盤進駐13檔潛力股 ◆原物料蠢動 春江水暖「鎳」先知？ ◆向股神巴菲特取經 布局每年賺逾4元好股
+                                    ◆搞懂法拍７件事
+                                    用市價6.4折買法拍屋 ◆金羊年要人旺、財氣旺 張旭初傳授兩大聚寶盆好招羊財 ◆海外基金投資 小心匯差魔鬼。 </p>
+                                <md-button class="md-raised pull-right md-primary"
+                                           ng-href="http://doctorkowj.gitbooks.io/kppolicy/content/">開始閱讀
+                                </md-button>
+                            </md-card-content>
+                        </md-card>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <md-card>
+                            <img src="http://kollect.com.tw/files/bookcnt/669/0100235820/img/1423735631_large.jpg"
+                                 alt="Washed Out">
+                            <md-card-content>
+                                <h2>理財周刊755+756：穩賺20％！羊年投資術 股俠你來做</h2>
+
+                                <p class="md-card-text">
+                                    黑天鵝亂飛，國際股市動盪，台股過年連假不開盤，風險不小。理周投研部上周已建議讀者落袋為安，新春開紅盤，謀定而後動，再看國內外情勢擬定新的操作策略。但有許多個股出現法人逢低認養及主力默默吃貨鎖碼的現象，理周投研部在新春關鍵時刻，特別推出金羊年「股俠養成術」，教投資人向股神取經、跟主力飆速、吃法人豆腐，穩賺20%！
+
+                                    更多精采內容》 ◆新春開紅盤 傳產可望異軍突起 ◆神祕買盤進駐13檔潛力股 ◆原物料蠢動 春江水暖「鎳」先知？ ◆向股神巴菲特取經 布局每年賺逾4元好股
+                                    ◆搞懂法拍７件事
+                                    用市價6.4折買法拍屋 ◆金羊年要人旺、財氣旺 張旭初傳授兩大聚寶盆好招羊財 ◆海外基金投資 小心匯差魔鬼。 </p>
+                                <md-button class="md-raised pull-right md-primary"
+                                           ng-href="http://doctorkowj.gitbooks.io/kppolicy/content/">開始閱讀
+                                </md-button>
+                            </md-card-content>
+                        </md-card>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <md-card>
+                            <img src="http://kollect.com.tw/files/bookcnt/669/0100235820/img/1423735631_large.jpg"
+                                 alt="Washed Out">
+                            <md-card-content>
+                                <h2>理財周刊755+756：穩賺20％！羊年投資術 股俠你來做</h2>
+
+                                <p class="md-card-text">
+                                    黑天鵝亂飛，國際股市動盪，台股過年連假不開盤，風險不小。理周投研部上周已建議讀者落袋為安，新春開紅盤，謀定而後動，再看國內外情勢擬定新的操作策略。但有許多個股出現法人逢低認養及主力默默吃貨鎖碼的現象，理周投研部在新春關鍵時刻，特別推出金羊年「股俠養成術」，教投資人向股神取經、跟主力飆速、吃法人豆腐，穩賺20%！
+
+                                    更多精采內容》 ◆新春開紅盤 傳產可望異軍突起 ◆神祕買盤進駐13檔潛力股 ◆原物料蠢動 春江水暖「鎳」先知？ ◆向股神巴菲特取經 布局每年賺逾4元好股
+                                    ◆搞懂法拍７件事
+                                    用市價6.4折買法拍屋 ◆金羊年要人旺、財氣旺 張旭初傳授兩大聚寶盆好招羊財 ◆海外基金投資 小心匯差魔鬼。 </p>
+                                <md-button class="md-raised pull-right md-primary"
+                                           ng-href="http://doctorkowj.gitbooks.io/kppolicy/content/">開始閱讀
+                                </md-button>
+                            </md-card-content>
+                        </md-card>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <md-card>
+                            <img src="http://kollect.com.tw/files/bookcnt/669/0100235820/img/1423735631_large.jpg"
+                                 alt="Washed Out">
+                            <md-card-content>
+                                <h2>理財周刊755+756：穩賺20％！羊年投資術 股俠你來做</h2>
+
+                                <p class="md-card-text">
+                                    黑天鵝亂飛，國際股市動盪，台股過年連假不開盤，風險不小。理周投研部上周已建議讀者落袋為安，新春開紅盤，謀定而後動，再看國內外情勢擬定新的操作策略。但有許多個股出現法人逢低認養及主力默默吃貨鎖碼的現象，理周投研部在新春關鍵時刻，特別推出金羊年「股俠養成術」，教投資人向股神取經、跟主力飆速、吃法人豆腐，穩賺20%！
+
+                                    更多精采內容》 ◆新春開紅盤 傳產可望異軍突起 ◆神祕買盤進駐13檔潛力股 ◆原物料蠢動 春江水暖「鎳」先知？ ◆向股神巴菲特取經 布局每年賺逾4元好股
+                                    ◆搞懂法拍７件事
+                                    用市價6.4折買法拍屋 ◆金羊年要人旺、財氣旺 張旭初傳授兩大聚寶盆好招羊財 ◆海外基金投資 小心匯差魔鬼。 </p>
+                                <md-button class="md-raised pull-right md-primary"
+                                           ng-href="http://doctorkowj.gitbooks.io/kppolicy/content/">開始閱讀
+                                </md-button>
+                            </md-card-content>
+                        </md-card>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <md-card>
+                            <img src="http://kollect.com.tw/files/bookcnt/669/0100235820/img/1423735631_large.jpg"
+                                 alt="Washed Out">
+                            <md-card-content>
+                                <h2>理財周刊755+756：穩賺20％！羊年投資術 股俠你來做</h2>
+
+                                <p class="md-card-text">
+                                    黑天鵝亂飛，國際股市動盪，台股過年連假不開盤，風險不小。理周投研部上周已建議讀者落袋為安，新春開紅盤，謀定而後動，再看國內外情勢擬定新的操作策略。但有許多個股出現法人逢低認養及主力默默吃貨鎖碼的現象，理周投研部在新春關鍵時刻，特別推出金羊年「股俠養成術」，教投資人向股神取經、跟主力飆速、吃法人豆腐，穩賺20%！
+
+                                    更多精采內容》 ◆新春開紅盤 傳產可望異軍突起 ◆神祕買盤進駐13檔潛力股 ◆原物料蠢動 春江水暖「鎳」先知？ ◆向股神巴菲特取經 布局每年賺逾4元好股
+                                    ◆搞懂法拍７件事
+                                    用市價6.4折買法拍屋 ◆金羊年要人旺、財氣旺 張旭初傳授兩大聚寶盆好招羊財 ◆海外基金投資 小心匯差魔鬼。 </p>
+                                <md-button class="md-raised pull-right md-primary"
+                                           ng-href="http://doctorkowj.gitbooks.io/kppolicy/content/">開始閱讀
+                                </md-button>
+                            </md-card-content>
+                        </md-card>
+                    </div>
+                </div>
+            </div>
+        </ng-switch>
+    </div>
+</main>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular-animate.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular-aria.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angular_material/0.7.1/angular-material.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 <script src="js/vendor/bootstrap.min.js"></script>
-<script src="js/bootstrap-material-design/ripples.min.js"></script>
-<script src="js/bootstrap-material-design/material.min.js"></script>
 <script src="js/main.js"></script>
-<script>
-    $(document).ready(function() {
-        $.material.init();
-    });
-</script>
 </body>
 </html>
